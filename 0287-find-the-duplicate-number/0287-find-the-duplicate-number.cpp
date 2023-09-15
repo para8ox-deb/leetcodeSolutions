@@ -5,18 +5,18 @@ public:
 
 
         // second approach - marking visited ele as negative and then finding duplicate
-        int ans=-1;
-        for(int i=0;i<nums.size();i++){
-            int index = abs(nums[i]);
+        // int ans=-1;
+        // for(int i=0;i<nums.size();i++){
+        //     int index = abs(nums[i]);
 
-            if(nums[index]<0){
-                ans= index;
-            }
+        //     if(nums[index]<0){
+        //         ans= index;
+        //     }
 
-            nums[index]*=-1;
-        }
+        //     nums[index]*=-1;
+        // }
 
-        return ans;
+        // return ans;
 
 
         //third approach - positioning wali
