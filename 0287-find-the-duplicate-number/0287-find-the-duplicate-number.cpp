@@ -1,35 +1,24 @@
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
-        
-        sort(nums.begin(),nums.end());
+        // first approach   - sort and then find TC - O(nlogn)
 
+
+        // second approach - marking visited ele as negative and then finding duplicate
+        int ans=-1;
         for(int i=0;i<nums.size();i++){
-            if(nums[i]==nums[i+1]){
-                return nums[i];
+            int index = abs(nums[i]);
+
+            if(nums[index]<0){
+                ans= index;
             }
+
+            nums[index]*=-1;
         }
-        return 0;
 
+        return ans;
 
-        // NOT WORKING COZ - DUPLICATES NO CAN BE MORE THAN 2
-        // int ans=0;
-
-        // for(int i=0;i<nums.size();i++){
-        //     ans=ans^nums[i];
-        // }
-
-        // cout<<ans<<endl;        // will result in 6 (for first case ) - 6 binary : 110
-
-        // for(int i=1;i<nums.size();i++){
-        //     ans=ans^i;
-        // }
-
-        // cout<<ans;              // it will give the result (for first case ) - 2 answer
-
-        // return ans;
         
-
 
     }
 };
