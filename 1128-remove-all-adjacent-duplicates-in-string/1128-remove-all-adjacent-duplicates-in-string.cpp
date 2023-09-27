@@ -10,7 +10,8 @@ public:
             if(ans.empty()){
                 ans.push_back(s[i]);
             }
-            else if(ans.back()==s[i]){
+            // else if(ans.back()==s[i]){
+            else if(ans[ans.length()-1]==s[i]){
                 // cout<<ans[i-1]<<endl;
                 ans.pop_back();
             }
