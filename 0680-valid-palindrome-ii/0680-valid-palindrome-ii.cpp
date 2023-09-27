@@ -19,7 +19,7 @@ public:
         
 
 
-        // Method - 1
+        // Method - 1 - TC-O(n)
 
         int i=0;
         int j=s.length()-1;
