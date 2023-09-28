@@ -7,6 +7,7 @@ public:
 
         // it will return true, if position of char1 in str string is less than the position of char2 in str string
 
+        // when true is returned, then char1 will be placed before char2 in the output string
         
         return (str.find(c1) < str.find(c2));
     }
