@@ -1,7 +1,7 @@
 class Solution {
 public:
 
-    void createMapping(string& str){
+    void createAndUpdateMapping(string& str){
         char c='a';
         char mapping[300]={0};
 
@@ -26,7 +26,7 @@ public:
 
         //Normalising the pattern i.e. mapping the pattern first and then updating the pattern with the mapped data
         cout<<pattern;
-        createMapping(pattern);
+        createAndUpdateMapping(pattern);
         cout<<pattern;  // normalized pattern
 
 
@@ -35,7 +35,7 @@ public:
             string tempString=s;        // to change tempString so that actual words remains same coz we have to return the strings that resembles the pattern
 
             // normalising tempString
-            createMapping(tempString);
+            createAndUpdateMapping(tempString);
 
             if(tempString==pattern){
                 ans.push_back(s);
