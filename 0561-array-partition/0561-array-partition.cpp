@@ -1,6 +1,10 @@
 class Solution {
 public:
     int arrayPairSum(vector<int>& nums) {
+
+
+        // Taken from someone's solution
+        
         int res=0;
         int n = nums.size();
 
