@@ -2,7 +2,7 @@ class Solution {
 public:
     int mySqrt(int x) {
         // It can be done using binary search in O(logn) time
-
+        
         int s=0;
         int e=x;
         
