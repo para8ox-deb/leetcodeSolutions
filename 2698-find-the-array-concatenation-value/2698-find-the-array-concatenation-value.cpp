@@ -19,7 +19,7 @@ public:
             j--;
 
             ans += stoi(val);
-            cout<<ans<<endl;
+            // cout<<ans<<endl;
         }
 
         return ans;
