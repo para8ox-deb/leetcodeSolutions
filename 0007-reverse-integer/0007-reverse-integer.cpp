@@ -5,7 +5,7 @@ public:
         
         while(x){
             int digit = x%10;
-            // handling overflowing and underflowing condition
+            // handling overflowing and underflowing condition (ans*10>INT_MAX i.. ans = INT_MAX/10)
             if(ans>INT_MAX/10 || ans<INT_MIN/10){
                 return 0;
             }
