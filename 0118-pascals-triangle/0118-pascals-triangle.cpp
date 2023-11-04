@@ -5,9 +5,6 @@ public:
         // Solution 
 
         vector<vector<int>> ans;
-        if(numRows==0){
-            return ans;
-        }
         int n=numRows;
 
         for(int i=1;i<=n;i++){
