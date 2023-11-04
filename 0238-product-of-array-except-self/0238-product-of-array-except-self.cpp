@@ -1,6 +1,12 @@
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
+
+        // Other method w/o division operation
+        
+
+
+        // Working but using division here
         vector<int> res;
         int n=nums.size();
         int mul=1;
