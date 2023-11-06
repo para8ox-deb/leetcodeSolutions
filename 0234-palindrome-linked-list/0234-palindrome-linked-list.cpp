@@ -41,7 +41,8 @@ public:
     }
 
     bool compareList(ListNode* head1, ListNode* head2){
-        while(head1!=NULL && head2!=NULL){
+        // while(head1!=NULL && head2!=NULL){
+        while(head2!=NULL){ // it will work coz head2 or other half of list will always be smaller than the first half (in odd case)
             if(head1->val != head2->val){
                 return false;
 
