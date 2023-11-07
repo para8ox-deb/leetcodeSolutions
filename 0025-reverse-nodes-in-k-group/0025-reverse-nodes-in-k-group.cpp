@@ -50,9 +50,9 @@ public:
         ListNode* recursionKaAns = NULL;
         if(nextNode != NULL) {
             recursionKaAns = reverseKGroup(nextNode, k);
-            head->next = recursionKaAns;
+            head->next = recursionKaAns;    // to connect humara wala case to recursion wala result
         }
 
-        return prev;
+        return prev;        // prev was at head so ab returning the result
     }
 };
