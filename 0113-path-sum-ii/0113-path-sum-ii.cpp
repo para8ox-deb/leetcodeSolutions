@@ -26,6 +26,7 @@ public:
         if(root->left==NULL && root->right==NULL){
             //verify
             if(sum==targetSum){
+                //store temp path in final array
                 ans.push_back(temp);
             }
             else{
