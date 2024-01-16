@@ -12,39 +12,58 @@ class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
         
-        int len=0;
+//         int len=0;
 
-        ListNode* temp = head;
+//         ListNode* temp = head;
 
-        while(temp!=NULL){
-            len++;
-            temp = temp->next;
-        }
+//         while(temp!=NULL){
+//             len++;
+//             temp = temp->next;
+//         }
 
-        int trueLen;
+//         int trueLen;
 
-        if(len%2!=0){
-            trueLen = (len+1)/2;
-        }
-        else{
-            trueLen = len/2 + 1;
-        }
+//         if(len%2!=0){
+//             trueLen = (len+1)/2;
+//         }
+//         else{
+//             trueLen = len/2 + 1;
+//         }
 
 
-        int val=0;
+//         int val=0;
 
-        temp = head;
+//         temp = head;
 
-        while(temp!=NULL){
+//         while(temp!=NULL){
 
-            if(val==trueLen-1){
-                break;
+//             if(val==trueLen-1){
+//                 break;
+//             }
+
+//             val++;
+//             temp = temp->next;
+//         }
+
+//         return temp;
+        
+        
+        
+        
+        //  USING SLOW & FAST APPROACH
+        ListNode* slow = head;
+        ListNode* fast = head;
+
+        while(fast != NULL)
+        {
+            fast = fast->next; // 1 step move 
+
+            if(fast != NULL)
+            {
+                fast = fast->next; // move fast 1 step more
+                slow = slow->next; // move slow 1 step
             }
-
-            val++;
-            temp = temp->next;
         }
-
-        return temp;
+        return slow;
     }
 };
