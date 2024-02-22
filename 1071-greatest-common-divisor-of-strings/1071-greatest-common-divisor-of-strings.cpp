@@ -29,10 +29,6 @@ public:
             if(res!=str2.substr(i,val)) return "";
         }
                     
-
-
-
-
         return res;
 
     }
