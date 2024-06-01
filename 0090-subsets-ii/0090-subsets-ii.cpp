@@ -3,8 +3,10 @@ public:
     
     void findSubSet(int ind, vector<int> &nums, vector<int> &ds, vector<vector<int>> &ans){
         ans.push_back(ds);
+        //empty subset is selected
         
-        for(int i=ind; i<nums.size(); i++){
+        // now first we will select all single ele subset, then 2 ele, then 3 ele and so on
+        for(int i=ind; i<nums.size(); i++){ //using loop i.e. going level by level in recursion
             if(i!=ind && nums[i]==nums[i-1]) continue; //duplicate ele so leave it
             
             ds.push_back(nums[i]);
