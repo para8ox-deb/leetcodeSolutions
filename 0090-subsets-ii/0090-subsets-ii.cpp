@@ -17,7 +17,7 @@ public:
     
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
         
-        sort(nums.begin(),nums.end());
+        sort(nums.begin(),nums.end());  //so that all duplicate ele can come together
         vector<vector<int>> ans;
         vector<int> ds;
         findSubSet(0, nums,ds, ans);
